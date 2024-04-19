@@ -18,6 +18,32 @@ const RegisterCom = () => {
                     <div className="rounded-md shadow-sm -space-y-px">
                         <div>
                             <label htmlFor="email-address" className="sr-only">
+                                Name
+                            </label>
+                            <input
+                                id="name"
+                                name="name"
+                                type="name"
+                                autoComplete="name"
+                                required
+                                className="rounded-3xl relative block w-full px-3 py-2 placeholder-gray-500 bg-white mb-6 shadow-2xl border-2 border-white text-black"
+                                placeholder="n a m e" />
+                        </div>
+                        <div>
+                            <label htmlFor="email-address" className="sr-only">
+                                Username
+                            </label>
+                            <input
+                                id="username"
+                                name="username"
+                                type="username"
+                                autoComplete="username"
+                                required
+                                className="rounded-3xl relative block w-full px-3 py-2 placeholder-gray-500 bg-white mb-6 shadow-2xl border-2 border-white text-black"
+                                placeholder="u s e r n a m e" />
+                        </div>
+                        <div>
+                            <label htmlFor="email-address" className="sr-only">
                                 Email address
                             </label>
                             <input
@@ -56,7 +82,7 @@ const RegisterCom = () => {
                 </form>
             </div>
         </div>
-        <img src="./src/assets/wallpaper gaming.jpg" alt="wallpaper" className='absolute right-0 h-screen w-1/3'/>
+        <img src="./src/assets/gaming2.jpg" alt="wallpaper" className='absolute right-0 h-screen w-1/3'/>
     </div>
 
         // <div className="min-h-screen flex items-center justify-center bg-white ">
