@@ -17,34 +17,32 @@ const ProfilCom = () => {
                 </div>  
             </div>
             
-            <div className='bg-black absolute top-44 left-0 w-full h-[470px] rounded-2xl shadow-2xl flex flex-col items-center'>
-                <table className='text-white text-3xl tracking-widest mt-32'>
-                    <tr>
-                        <td className='text-start'>Name</td>
-                        <td className='text-start'>&nbsp;:</td>
-                        <td className='text-start'>Afif Lukmanul Hakim</td>
-                    </tr>
-                    <tr>
-                        <td className='text-start'>Username</td>
-                        <td className='text-start'>&nbsp;:</td>
-                        <td className='text-start'>Pipskieee</td>
-                    </tr>
-                    <tr>
-                        <td className='text-start'>Email</td>
-                        <td className='text-start'>&nbsp;:</td>
-                        <td className='text-start'>apip@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <td className='text-start'>Age</td>
-                        <td className='text-start'>&nbsp;:</td>
-                        <td className='text-start'>21</td>
-                    </tr>
-                    <tr>
-                        <td className='text-start'>Address</td>
-                        <td className='text-start'>&nbsp;:</td>
-                        <td className='text-start'>Probolinggo</td>
-                    </tr>
-                </table>
+            <div className='bg-black absolute top-44 left-0 w-full h-[470px] rounded-2xl shadow-2xl flex flex-col items-start'>
+                <div className='text-white text-3xl tracking-widest mt-28 ml-[500px]'>
+                    <div>Name :</div>
+                </div>
+                <div className='text-white text-3xl tracking-widest mb-4 ml-[500px] underline'>
+                    <div>Afif Lukmanul Hakim</div>
+                </div>
+                <div className='text-white text-3xl tracking-widest ml-[500px]'>
+                    <div>Username :</div>
+                </div>
+                <div className='text-white text-3xl tracking-widest mb-4 ml-[500px] underline'>
+                    <div>Pipskieee</div>
+                </div>
+                <div className='text-white text-3xl tracking-widest ml-[500px]'>
+                    <div>Email :</div>
+                </div>
+                <div className='text-white text-3xl tracking-widest mb-4 ml-[500px] underline'>
+                    <div>apip@gmail.com</div>
+                </div>
+                <div className='text-white text-3xl tracking-widest ml-[500px]'>
+                    <div>Address :</div>
+                </div>
+                <div className='text-white text-3xl tracking-widest mb-4 ml-[500px] underline'>
+                    <div>Probolinggo, East Java</div>
+                </div>
+                
             </div>
             <img src="./src/assets/Afif.jpg" alt="Profile" className='rounded-full w-28 h-28 absolute top-32 left-[630px]' />
         </div>
