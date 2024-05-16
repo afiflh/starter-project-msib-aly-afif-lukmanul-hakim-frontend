@@ -1,8 +1,7 @@
-import RegisterCom from "../components/RegisterCom";
-
+import RegisterCom from '../components/RegisterCom';
 
 const Register = () => {
-    return <RegisterCom />
+    return <RegisterCom />;
 };
 
-export default Register
+export default Register;

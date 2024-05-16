@@ -1,60 +1,23 @@
-import React from "react";
-import PropTypes from "prop-types";
-
-const variants = {
-    primary: "border-white-A700 border border-solid bg-gray-800 checked:border checked: border-solid checked:bg-gray-800 checked:focus:bg-gray-800 checked:focus:border-white-A700",
-};
-
-const sizes = {
-    xs: "h-[11px] w-[11px]",
-};
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const CheckBox = React.forwardRef(
-    (
-        {
-            className = "",
-            name = "",
-            children,
-            label = "",
-            id = "checkbox_id",
-            onChange,
-            variant = "primary",
-            size = "xs",
-            ...restProps
-        },
-        ref,
-    ) => {
-        const handleChange = (e) => {
-            if (onChange) onChange(e?.target?.checked);
-        };
-
-        return (
-            <>
-                <div className={className + " flex items-center gap-[5px] cursor-pointer"}>
-                    <input
-                        className={` ${(size && sizes[size]) || ""} ${(variant && variants[variant]) || ""}`}
-                        ref={ref}
-                        type="checkbox"
-                        name={name}
-                        onChange={handleChange}
-                        id={id}
-                        {...restProps}
-                    />
-                    {!!label && <label htmlFor={id}>{label}</label>}
-                </div>
-                {children}
-            </>
-        );
-    }
+    ({ className = '', label = '', id = 'checkbox_id', ...restProps }, ref) => (
+        <div
+            className={`${className} flex items-center gap-[5px] cursor-pointer`}
+        >
+            <input ref={ref} type='checkbox' id={id} {...restProps} />
+            {!!label && <label htmlFor={id}>{label}</label>}
+        </div>
+    )
 );
+
+CheckBox.displayName = 'CheckBox';
 
 CheckBox.propTypes = {
     className: PropTypes.string,
-    name: PropTypes.string,
     label: PropTypes.string,
     id: PropTypes.string,
-    variant: PropTypes.oneOf(["primary"]),
-    size: PropTypes.oneOf(["xs"]),
 };
 
-export { CheckBox };
+export default CheckBox;

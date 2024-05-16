@@ -1,7 +1,7 @@
-import ProfilCom from "../components/ProfilCom";
+import ProfilCom from '../components/ProfilCom';
 
 const Profil = () => {
-    return <ProfilCom />
+    return <ProfilCom />;
 };
 
-export default Profil
+export default Profil;
